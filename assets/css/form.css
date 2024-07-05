@@ -1,0 +1,77 @@
+  #landingPageContent {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 5px;
+
+}
+
+    hr {
+        margin-top: 10px;
+        margin-bottom:0;
+        border: 2px solid black;
+    }
+
+    #aboutThisBlog {
+        background-color: white;
+        background-image: url('../blog.jpg');
+        /* position: inherit; */
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border: 2px solid black;
+        margin-right: 3.5px;
+        flex: 1 1 50%;
+    }
+
+    #blogForm {
+        background-color: white;
+        border: 2px solid black;
+        margin-left: 3.5px;
+        flex: 1 1 50%;
+    }
+
+    #blogForm h2 {
+        flex-direction: row;
+        display: flex;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 40px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        /* align-items: left; */
+        /* justify-content: center; */
+        margin-left: 3.5px;
+        flex: 1 1 100%;
+        padding: 40px;
+    }
+
+    #inputUsername, #inputTitle {
+        width: 45%;
+        height: 30px;
+      }
+
+    textarea {
+        width: 100%;
+        height: 150px;
+    }
+
+    button {
+        width: 100%;
+        height: 30px;
+        background-color: black;
+        color: white;
+    }
+
+    p {
+        align-items: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }

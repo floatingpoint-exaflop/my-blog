@@ -1,3 +1,20 @@
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 3px solid black;
+    flex-wrap: wrap;
+    font-size: 30px;
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+header h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+
 /* Light and Dark Modes */
 
 body.light {
@@ -19,3 +36,15 @@ body.light form {
 body.dark form {
     border-color: white;
 }
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 3px solid black;
+    flex-wrap: wrap;
+    font-size: 30px;
+    padding: 20px;
+    justify-content: space-around;
+  }

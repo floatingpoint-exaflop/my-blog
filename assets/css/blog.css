@@ -1,0 +1,8 @@
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #8F9DB3;
+    border: 1px solid black;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }

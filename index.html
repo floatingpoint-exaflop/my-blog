@@ -12,40 +12,44 @@
 </head>
 <body>
     <header>
-        <div id="darkLightMode">
+        <h1>Welcome to the Public Blog!</h1>
+        <div id="darkLightMode">☀️</div>
 
-        </div>
 
     </header>
     <main>
-        <section id="aboutThisBlog">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nostrum dolores iste ad vel illo molestiae. Cum, maxime laborum praesentium dolor consequuntur possimus, nihil eligendi, earum consequatur omnis blanditiis quis.</p>
-        </section>
-        <section id="blogForm">
-            <h2>What's on your mind?</h2>
-            <form>
-                <div id="inputUsernameDiv" class="inputDivSmall">
-                    <label for="inputUsername">Username:</label>
-                    <textarea id="inputUsername" placeholder="Coolguy1991"></textarea>
+    <hr>
+    <div id="landingPageContent">
+            <section id="aboutThisBlog">
+                <p>Hello! This is a super cool public blog where I -- and you! -- can leave messages and see them listed together in a compendium. Simply write your post, submit it, and you'll be taken to a new page where you can view posts you've left. All of them have been captured in localStorage, which for now means you will only be able to see posts generated on your machine. Someday this may change, depending on what I learn in the near future about Web API functionality in Javascript.</p>
+            </section>
+            <section id="blogForm">
+                <div id="title">
+                <h2>What's on your mind?</h2>
                 </div>
-                <div id="inputTitleDiv" class="inputDivSmall">
-                    <label for="inputTitle">Title:</label>
-                    <textarea id="inputTitle" placeholder="What is your blog post called?"></textarea>
-                </div>
-                <div id="inputContentDiv" class="inputDivLrg">
-                    <label for="inputContent">Content:</label>
-                    <textarea id="InputContent" placeholder="Write your blog post here!"></textarea>
-                </div>
-                <a href=./blog.html>
-                <button id="submitButton">Submit</button>
-                </a>
-                </div>
-            </form>
-        </section>
-    </main>
-    <!--Can I get it so if I make a form, it will Write to local storage -->
-
-
+                <form>
+                    <div id="inputUsernameDiv" class="inputDivSmall">
+                        <p>Username:</p>
+                        <textarea id="inputUsername" placeholder="Coolguy1991"></textarea>
+                    </div>
+                    <div id="inputTitleDiv" class="inputDivSmall">
+                        <p>Title:</p>
+                        <textarea id="inputTitle" placeholder="What is your blog post called?"></textarea>
+                    </div>
+                    <div id="inputContentDiv" class="inputDivLrg">
+                        <p>Content:</p>
+                        <textarea id="InputContent" placeholder="Write your blog post here!"></textarea>
+                    </div>                  
+                    <button id="submitButton">Submit</button>
+                    </div>
+                </form>
+            </section>
+    </div>
+</main>
+    <footer>
+        <h3 id="nameTag">Made with ❤️ by Tim Scallon</h3>
+        <a href="https://floatingpoint-exaflop.github.io/coding-portfolio" target="_blank" id="portfolioLink"><h3>My Portfolio</h3></a>
+    </footer>
     <script src="./assets/js/logic.js"></script>
     <script src="./assets/js/form.js"></script>
 </body>
