@@ -11,11 +11,38 @@
     <title>Welcome to the Public Blog!</title>
 </head>
 <body>
+    <header>
+        <div id="darkLightMode">
 
-    <form>
-        <textarea></textarea>
-        <button>Submit</button>
-    </form>
+        </div>
+
+    </header>
+    <main>
+        <section id="aboutThisBlog">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nostrum dolores iste ad vel illo molestiae. Cum, maxime laborum praesentium dolor consequuntur possimus, nihil eligendi, earum consequatur omnis blanditiis quis.</p>
+        </section>
+        <section id="blogForm">
+            <h2>What's on your mind?</h2>
+            <form>
+                <div id="inputUsernameDiv" class="inputDivSmall">
+                    <label for="inputUsername">Username:</label>
+                    <textarea id="inputUsername" placeholder="Coolguy1991"></textarea>
+                </div>
+                <div id="inputTitleDiv" class="inputDivSmall">
+                    <label for="inputTitle">Title:</label>
+                    <textarea id="inputTitle" placeholder="What is your blog post called?"></textarea>
+                </div>
+                <div id="inputContentDiv" class="inputDivLrg">
+                    <label for="inputContent">Content:</label>
+                    <textarea id="InputContent" placeholder="Write your blog post here!"></textarea>
+                </div>
+                <a href=./blog.html>
+                <button id="submitButton">Submit</button>
+                </a>
+                </div>
+            </form>
+        </section>
+    </main>
     <!--Can I get it so if I make a form, it will Write to local storage -->
 
 
