@@ -2,7 +2,8 @@ header {
     display: flex;
     flex-direction: row;
     background-color: white;
-    border: 3px solid black;
+    border-bottom: 3px solid black;
+    border-top:  3px solid black;
     flex-wrap: wrap;
     font-size: 30px;
     padding: 20px;
@@ -10,10 +11,16 @@ header {
   }
 
 header h1 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
+#rightHeaderSide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
 
 /* Light and Dark Modes */
 
@@ -42,9 +49,14 @@ footer {
     display: flex;
     flex-direction: row;
     background-color: white;
-    border: 3px solid black;
+    border-bottom: 3px solid black;
+    border-top:  3px solid black;
     flex-wrap: wrap;
     font-size: 30px;
     padding: 20px;
     justify-content: space-around;
   }
+
+footer a {
+    text-decoration: none;
+}

@@ -11,13 +11,48 @@
     <title>Thanks for contributing!</title>
 </head>
 <body class="dark">
-    <!-- When this page loads can I read form localstorage? Leave theme switcher till the end -->
+    <!-- When this page loads can I read from localstorage? Leave theme switcher till the end -->
     <header>
-        <h1>Welcome to the Public Blog!</h1>
+        <h1>My First Blog!</h1>
+        <div id="rightHeaderSide">
             <button>⬅️Back⬅️</button>
             <div id="darkLightMode">☀️</div>
+        </div>
     </header>
-
+    <main>
+        <div id="bodyContent">
+                <section id="blog1">
+                    <div id="blogTitle1">
+                        <p></p>
+                    </div>
+                    <div id="blogTitle1"></div>
+                    <div id="blogTitle1"></div>
+                    <div id="blogTitle1"></div>
+                    <p>Hello! This is a super cool public blog where I -- and you! -- can leave messages and see them listed together in a compendium. Simply write your post, submit it, and you'll be taken to a new page where you can view posts you've left. All of them have been captured in localStorage, which for now means you will only be able to see posts generated on your machine. Someday this may change, depending on what I learn in the near future about Web API functionality in Javascript.</p>
+                </section>
+                <section id="blogForm">
+                    <div id="title">
+                    <h2>What's on your mind?</h2>
+                    </div>
+                    <form>
+                        <div id="inputUsernameDiv" class="inputDivSmall">
+                            <p>Username:</p>
+                            <textarea id="inputUsername" placeholder="Coolguy1991"></textarea>
+                        </div>
+                        <div id="inputTitleDiv" class="inputDivSmall">
+                            <p>Title:</p>
+                            <textarea id="inputTitle" placeholder="What is your blog post called?"></textarea>
+                        </div>
+                        <div id="inputContentDiv" class="inputDivLrg">
+                            <p>Content:</p>
+                            <textarea id="InputContent" placeholder="Write your blog post here!"></textarea>
+                        </div>                  
+                        <button id="submitButton">Submit</button>
+                        </div>
+                    </form>
+                </section>
+        </div>
+    </main>
 
 
 <!-- List of blog articles is my state -->
