@@ -1,0 +1,21 @@
+/* Light and Dark Modes */
+
+body.light {
+    background-color: white;
+}
+
+body.dark {
+    background-color: black;
+}
+
+form {
+    border: 1px solid transparent;
+}
+
+body.light form {
+    border-color: black;
+}
+
+body.dark form {
+    border-color: white;
+}
