@@ -2,6 +2,7 @@
 const inputUsername = document.querySelector('#inputUsername');
 const inputTitle = document.querySelector('#inputTitle');
 const inputContent = document.querySelector('#inputContent');
+
 const submitButton = document.querySelector('#submitButton');
 
 //Then, we must put an event listener on the submit button, so it actually does things.
