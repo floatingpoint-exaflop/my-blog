@@ -17,6 +17,10 @@ blogPosts.forEach(blogPost => {
     postTitle.textContent = blogPost.postTitle;
     postTitle.classList.add('post-title-h4');
 
+    //byLine
+    const byLine = document.createElement('hr');
+    byLine.classList.add('byLine');
+
     // Second we put down the postContent as a <p>.
     const postContent = document.createElement('p');
     postContent.textContent = blogPost.postContent;
@@ -24,11 +28,12 @@ blogPosts.forEach(blogPost => {
 
     // Third we put down the userName as an <h5>.
     const userName = document.createElement('h5');
-    userName.textContent = blogPost.userName;
+    userName.textContent =(`Posted by: ${blogPost.userName}`);
     userName.classList.add('user-name-h5');
 
     // Now we can put these three things into the <article>.
     blogPostTile.appendChild(postTitle);
+    blogPostTile.append(byLine);
     blogPostTile.appendChild(postContent);
     blogPostTile.appendChild(userName);
 

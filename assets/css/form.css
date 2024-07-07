@@ -5,14 +5,7 @@
     width: 100%;
     margin-top: 0;
     margin-bottom: 5px;
-
 }
-
-    hr {
-        margin-top: 10px;
-        margin-bottom:0;
-        border: 1px solid black;
-    }
 
     #aboutThisBlog {
         background-color: white;
@@ -44,9 +37,6 @@
     form {
         display: flex;
         flex-direction: column;
-        border: 2px solid black;
-        /* align-items: left; */
-        /* justify-content: center; */
         margin-left: 3.5px;
         flex: 1 1 100%;
         padding: 40px;
