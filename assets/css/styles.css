@@ -1,23 +1,58 @@
+/*All light and dark classed elements/items*/
+.light {
+    background-color: white;
+    border: black;
+    border-bottom: black;
+    border-top: black;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    border: white;
+    border-bottom: white;
+    border-top: white;
+    color: white;
+}
+
+/*Submit button should have opposite colors*/
+.light #submitButton {
+        background-color: black;
+        color: white;
+}
+
+.dark #submitButton {
+    background-color: white;
+    color: black;
+}
+
+/*Ensuring body text remains black on this section due to white photo background*/
+#aboutThisBlog p {
+    color: black;
+}
+
+/*All shared items: header, hr lines, footer*/
 header {
     display: flex;
     flex-direction: row;
-    background-color: white;
-    border-bottom: 3px solid black;
-    border-top:  3px solid black;
+    border-bottom: 3px solid;
+    border-top:  3px solid;
     flex-wrap: wrap;
     font-size: 30px;
     padding: 20px;
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
-  }
+}
+
+
 
 header h1 {
     font-family:'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
-#rightHeaderSide {
+#headerButtons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -27,15 +62,14 @@ header h1 {
 hr {
     margin-top: 5px;
     margin-bottom:5px;
-    border: 2px solid black;
+    border: 2px solid;
 }
 
 footer {
     display: flex;
     flex-direction: row;
-    background-color: white;
-    border-bottom: 3px solid black;
-    border-top:  3px solid black;
+    border-bottom: 3px solid;
+    border-top:  3px solid;
     flex-wrap: wrap;
     font-size: 30px;
     padding: 20px;
@@ -43,6 +77,7 @@ footer {
     width: 100%;
     box-sizing: border-box;
   }
+
 
 footer a {
     text-decoration: none;
