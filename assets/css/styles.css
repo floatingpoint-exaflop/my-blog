@@ -1,62 +1,62 @@
 /*All light and dark classed elements/items*/
 .light {
-    background-color: white;
-    border: black;
-    border-bottom: black;
-    border-top: black;
-    color: black;
+  background-color: white;
+  border: black;
+  border-bottom: black;
+  border-top: black;
+  color: black;
 }
 
 .dark {
-    background-color: black;
-    border: white;
-    border-bottom: white;
-    border-top: white;
-    color: white;
+  background-color: black;
+  border: white;
+  border-bottom: white;
+  border-top: white;
+  color: white;
 }
 
 /*Submit button should have opposite colors*/
 .light #submitButton {
-        background-color: black;
-        color: white;
+  background-color: black;
+  color: white;
 }
 
 .dark #submitButton {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 /*Ensuring body text remains black on this section due to white photo background*/
 #aboutThisBlog p {
-    color: black;
+  color: black;
 }
 
 /*All shared items: header, hr lines, footer*/
 header {
-    display: flex;
-    flex-direction: row;
-    border-bottom: 3px solid;
-    border-top:  3px solid;
-    flex-wrap: wrap;
-    font-size: 30px;
-    padding: 20px;
-    justify-content: space-between;
-    width: 100%;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 3px solid;
+  border-top:  3px solid;
+  flex-wrap: wrap;
+  font-size: 30px;
+  padding: 20px;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 
 
 header h1 {
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
 #headerButtons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 } 
 
 #modeToggle {
@@ -64,32 +64,31 @@ header h1 {
 }
 
 hr {
-    margin-top: 5px;
-    margin-bottom:5px;
-    border: 2px solid;
+  margin-top: 5px;
+  margin-bottom:5px;
+  border: 2px solid;
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
-    border-bottom: 3px solid;
-    border-top:  3px solid;
-    flex-wrap: wrap;
-    font-size: 30px;
-    padding: 20px;
-    justify-content: space-around;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
+  display: flex;
+  flex-direction: row;
+  border-bottom: 3px solid;
+  border-top:  3px solid;
+  flex-wrap: wrap;
+  font-size: 30px;
+  padding: 20px;
+  justify-content: space-around;
+  width: 100%;
+  box-sizing: border-box;
+}
 
 footer a {
     text-decoration: none;
 }
 
 /* unvisited link */
-    .dark a:link  {
-        color: white;
+  .dark a:link  {
+    color: white;
     }
   
   .light a:link {
@@ -138,11 +137,91 @@ footer a {
     border: 1px solid;
   }
 
+  #aboutThisBlog p {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+  #blogForm {
+    border: 1px solid;
+    margin-left: 2.5px;
+    flex: 1 1 50%;
+  }
+
+  #blogForm h2 {
+    flex-direction: row;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5px;
+    padding: 20px;
+  }
+
+  .inputDivSmall p, .inputDivLrg p {
+    font-size: 15px;
+  }
+
+  .inputDivSmall textarea, .inputDivLrg textarea {
+    font-size: 10px;
+  }
+
+  #inputUsername, #inputTitle {
+    /* width: 45%; */
+    height: 20px;
+  }
+
+  textarea {
+    /* width: 100%; */
+    height: 100px;
+  }
+
+  #submitButton {
+    /* width: 100%; */
+    height: 20px;
+  }
+
+  .blog-post-tile {
+    border-radius: 3px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding-left: 7px;
+  }
+  
+  .blog-post-tile h4 {
+    margin-top: 4px;
+    margin-bottom: 1px;
+    font-size: 13px;
+  }
+  
+  .blog-post-tile hr {
+    margin-right: 7px;
+  }
+  
+  .blog-post-tile p {
+    margin-top: 2px;
+    margin-bottom: 1px;
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  
+  .blog-post-tile h5 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 13px;
+  }
+
   footer {
     border-bottom: 2px solid;
     border-top:  2px solid;
-    font-size: 20px;
-    padding: 15px;
+    font-size: 15px;
+    padding: 10px;
   }
 }
 
@@ -151,10 +230,6 @@ footer a {
 /*Large SPhone sizing*/
 @media screen and (max-width: 760px) {
   header {
-    border-bottom: 1px solid;
-    border-top:  1px solid;
-    font-size: 10px;
-    padding: 12px;
     justify-content: space-around;
   }
 
@@ -167,6 +242,14 @@ footer a {
     margin-bottom:2px;
     border: 1px solid;
   }
+
+  #landingPageContent {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
 
   footer {
     border-bottom: 1px solid;
