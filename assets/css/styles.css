@@ -59,6 +59,7 @@ header h1 {
     justify-content: space-between;
 } 
 
+
 hr {
     margin-top: 5px;
     margin-bottom:5px;
@@ -82,3 +83,39 @@ footer {
 footer a {
     text-decoration: none;
 }
+
+/* unvisited link */
+    .dark a:link  {
+        color: white;
+    }
+  
+  .light a:link {
+    color: black;
+  }
+
+  /* visited link */
+  .dark a:visited {
+    color: #00fffb;
+  }
+
+  .light a:visited {
+    color: #08655c;
+  }
+  
+  /* mouse over link */
+  .dark a:hover {
+    color: #FF00FF;
+  }
+
+  .light a:hover {
+    color: #5a1eff;
+  }
+  
+  /* selected link */
+  .dark a:active {
+    color: #00ff6a;
+  }
+
+  .light a:active {
+    color: #4b6304;
+  }
